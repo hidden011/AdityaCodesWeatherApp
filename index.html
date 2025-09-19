@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    
+    <div class="alertMsg hide">Incorrect Location</div>  
+    <div class="container"><h1 class="heading">Weather App <i class="fa-solid fa-cloud" type="button"></i></h1>
+         <div class = "search_box">
+        <i class="fa-solid fa-location-dot"></i><input type="text" class="input_txt" placeholder="Enter Your Location">
+            <button type="button" class="search_btn"><i class="fa-solid fa-magnifying-glass g"></i></button>
+         </div>
+       
+        <div class="weather-box hide">
+            <h1 class="fetchedLocation"></h1>
+            <img src="">
+            <p class="temp">30*c</p>
+            <p class="des">smoke</p>
+        </div>
+
+        <div class="weather-details hide">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p class="txtContent">Humidity</p>
+                </div>
+            </div>
+
+            <div class="fl">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Feels Like</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    
+</body>
+<script src="script.js"></script>
+</html>
