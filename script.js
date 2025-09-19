@@ -13,7 +13,7 @@ let locationf = document.body.querySelector(".fetchedLocation");
 let alertMessage = document.body.querySelector(".alertMsg");
 let currLocationBtn = document.body.querySelector(".heading i");
 
-searchBtn.addEventListener("click",()=> hitApi());
+searchBtn.addEventListener("click",()=>hitApi());
 
 inputVal.addEventListener("keyup", (e)=>{
   if(e.key=="Enter") hitApi()});
@@ -117,6 +117,4 @@ function getCords(position) {
 
 function HandleFailure() {
   console.log(":( user didn't gave access!");
-
 }
-
