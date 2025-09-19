@@ -32,11 +32,11 @@ function getLocation() {
 
 async function hitApi(lat = null, long = null) {
     let api_key = `9b9344b5fa42284acab579cc63b6af59`;
-    let location = getLocation();
+    
     displayImg.src="photos/loading.gif";
     if(lat==null && long==null) {
     try {
-   
+   let location = getLocation();
     let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${api_key}`);
     let data = await response.json();
     
@@ -117,4 +117,5 @@ function getCords(position) {
 
 function HandleFailure() {
   console.log(":( user didn't gave access!");
+
 }
